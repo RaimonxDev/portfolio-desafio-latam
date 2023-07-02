@@ -265,10 +265,6 @@ input[type="text"]{
 }
 
 .footer-container{ 
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,12 +288,17 @@ input[type="text"]{
 }
 
 .about-of-me .title {
-  font-size: 10.75rem;
+  font-size: 9.75rem;
   font-size: 600;
   font-weight: 500;
   color: #fed7aa;
   text-align: center;
   letter-spacing: -0.94rem;
+}
+
+.about-of-me .title.projects {
+  font-size: 7.75rem;
+  letter-spacing: -0.4rem;
 }
 
 

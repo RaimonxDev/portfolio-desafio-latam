@@ -68,6 +68,12 @@ textarea {
 .flex-col{
   flex-direction: column;
 }
+.text-end{
+  text-align: end;
+}
+.text-start{
+  text-align: start;
+}
 
 .main-container {
   max-width: 1440px;

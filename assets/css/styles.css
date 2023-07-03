@@ -126,7 +126,8 @@ textarea {
 }
 
 .container-menu-mobile {
-  display: inline;
+  display: inline-flex;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) { 
   .container-menu-mobile {

@@ -8,6 +8,7 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>Ramon Martinez</title>
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
@@ -23,19 +24,58 @@
         </div>
         <ul class="navigation-list ">
           <li>
+            <a href="index.html">Inicio</a>
+            </li>
+            <li>
             <a href="about.html">Sobre mi</a>
           </li>
           <li>
             <a href="projects.html">Proyectos</a>
           </li>
+          <li>
+            <button class="contact">
+              <a href="#contact">
+                Contacto
+              </a>
+            </button>
+          </li>
         </ul>
-        <div class="nav-child text-end">
-          <button class="contact">
-            <a href="#contact">
-              Contacto</button>
-          </a>
+        <!-- menu-mobile -->
+        <div class="container-menu-mobile" x-data="{ isOpen: false }">
+          <button>
+            <svg @click="isOpen = !isOpen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-menu">
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+        
+          </button>
+        
+          <div x-show="isOpen" class="menu-mobile">
+            <ul class="flex flex-col ">
+              <li>
+                <a href="index.html">Inicio</a>
+              </li>
+              <li>
+                <a href="about.html">Sobre mi</a>
+              </li>
+              <li>
+                <a href="projects.html">Proyectos</a>
+              </li>
+              <li>
+                <button class="contact">
+                  <a href="#contact">
+                    Contacto
+                    </a>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
+      
     </header>
 
     <main class="main-content">
